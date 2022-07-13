@@ -1,4 +1,4 @@
-# pronunciation-from-Cambridge-Dictionary
+# get pronunciation
 ```py3
 python main.py -w apple
 ```
