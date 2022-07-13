@@ -32,7 +32,6 @@ def get_from_cambridge(word: str):
 def get_from_merriam_webster(word: str):
     base_url = "https://www.merriam-webster.com/dictionary/" + word
     soup = parse_url_as_macos(base_url)
-    # "play-pron hw-play-pron hoverable"
     d = soup.find(class_="play-pron hw-play-pron")
     if d:
         data_dir = d.get("data-dir")
