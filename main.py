@@ -16,7 +16,7 @@ def get_from_cambridge(word: str):
     base_url = "https://dictionary.cambridge.org"
     dictionary_url = base_url + "/us/dictionary/english/"
 
-    soup = parse_url_as_macos(dictionary_url)
+    soup = parse_url_as_macos(dictionary_url + word)
     audio = soup.find("amp-audio", {"id": "ampaudio1"})
     if not audio:
         return None
